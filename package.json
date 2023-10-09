@@ -1,0 +1,15 @@
+{
+	"name": "n_intro-component-with-signup-form",
+	"version": "1.0.0",
+	"description": "![Design preview for the Intro component with sign up form coding challenge](./design/desktop-preview.jpg)",
+	"main": "index.js",
+	"scripts": {
+		"start": "npx tailwindcss -i ./src/tailwind.css -o ./dist/style.css --watch",
+		"prod": "npx tailwindcss -i ./src/tailwind.css -o ./dist/style.css -minify"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"tailwindcss": "^3.3.3"
+	}
+}
