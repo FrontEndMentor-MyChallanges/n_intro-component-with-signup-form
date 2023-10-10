@@ -34,60 +34,61 @@
         class="bg-accentBlue rounded-xl w-full px-12 py-5 text-white font-semibold shadow-[0_7px_0_0_rgba(0,0,0,0.20)] mt-14 lg:mt-0">
         Try it free 7 days <span class="text-textLight font-normal">then $20/mo. thereafter</span>
       </button>
-      <form action="#" id="form"
+      <form action="#" id="form" novalidate
         class="rounded-xl flex flex-col gap-4 lg:gap-5 px-5 py-5 lg:py-8 mt-6 bg-white shadow-[0_7px_0_0_rgba(0,0,0,0.20)] form">
-        <<<<<<< Updated upstream <div class="relative flex flex-col items-center justify-center">
-          <input type="text" placeholder="First Name"
-            class="firstName placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-          <img src="./images/icon-error.svg" alt="" class="top-1/4 -translate-y-1/4 right-6 absolute hidden" />
-          <p class="text-primaryRed self-end hidden mt-2 text-xs">Please provide a valid email address</p>
+        <div class="input-container">
+          <div class=" relative">
+            <input type="text" placeholder="First Name" id="firstName" name="firstName" required
+              class="firstName placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+            <img src="./images/icon-error.svg" alt=""
+              class="firstNameErr top-1/2 right-6 absolute hidden -translate-y-1/2" />
+
+          </div>
+          <p class="errMsg text-primaryRed justify-end hidden mt-2 text-xs">Please provide a valid email
+            address
+          </p>
+        </div>
+
+        <!-- <div>
+          <div class="relative flex flex-col items-center justify-center">
+            <input type="text" placeholder="Last Name" id="lastName" name="lastName" required
+              class="lastName text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+            <img src="./images/icon-error.svg" alt="" class="top-1/2 right-6 hiddn absolute -translate-y-1/2" />
+
+          </div>
+          <p class="text-primaryRed flex justify-end w-full mt-2 text-xs">Please provide a valid email address</p>
+        </div>
+
+        <div>
+          <div class="relative flex flex-col items-center justify-center">
+            <input type="email" placeholder="Email Address" id="email" name="email" required
+              class="email text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+            <img src="./images/icon-error.svg" alt="" class="top-1/2 right-6 absolute -translate-y-1/2" />
+          </div>
+          <p class="text-primaryRed flex justify-end w-full mt-2 text-xs">Please provide a valid email address</p>
+        </div>
+
+        <div>
+          <div class="relative flex flex-col items-center justify-center">
+            <input type="password" placeholder="Password" id="password" name="password" required
+              class="password placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+            <img src="./images/icon-error.svg" alt="" class="top-1/2 right-6 absolute -translate-y-1/2" />
+
+          </div>
+          <p class="text-primaryRed flex justify-end w-full mt-2 text-xs">Please provide a valid email address</p>
+        </div> -->
+
+        <button type="submit"
+          class="btnClaim bg-primaryGreen w-full px-4 py-3 text-white uppercase rounded-md shadow-[0_6px_0_0_rgba(42,165,112,1)] tracking-wider hover:bg-[#60d6a3] transition-all active:translate-y-1 active:shadow-[0_4px_0_0_rgba(42,165,112,1)]">
+          Claim your free trial
+        </button>
+
+        <p class="text-textLight text-[10px] px-8 text-center">
+          By clicking the button, you are agreeing to our
+          <span class="text-primaryRed font-semibold">Terms and Services</span>
+        </p>
+      </form>
     </div>
-
-    <div class="relative flex flex-col items-center justify-center">
-      <input type="text" placeholder="Last Name"
-        class="lastName text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-      <img src="./images/icon-error.svg" alt="" class="top-1/4 -translate-y-1/4 right-6 absolute hidden" />
-      <p class="text-primaryRed self-end hidden mt-2 text-xs">Please provide a valid email address</p>
-    </div>
-
-    <div class="relative flex flex-col items-center justify-center">
-      <input type="text" placeholder="Email Address"
-        class="email text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-      <img src="./images/icon-error.svg" alt="" class="top-1/4 -translate-y-1/4 right-6 absolute hidden" />
-      <p class="text-primaryRed self-end hidden mt-2 text-xs">Please provide a valid email address</p>
-    </div>
-
-    <div class="relative flex flex-col items-center justify-center">
-      <input type="password" placeholder="Password"
-        class="password placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-      <img src="./images/icon-error.svg" alt="" class="top-1/4 -translate-y-1/4 right-6 absolute hidden" />
-      <p class="text-primaryRed self-end hidden mt-2 text-xs">Please provide a valid email address</p>
-    </div>
-
-    =======
-    <input type="text" placeholder="First Name"
-      class="firstName placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-
-    <input type="text" placeholder="Last Name"
-      class="lastName text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-
-    <input type="text" placeholder="Email Address"
-      class="email text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-
-    <input type="password" placeholder="Password"
-      class="password placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-    >>>>>>> Stashed changes
-    <button
-      class="btnClaim bg-primaryGreen w-full px-4 py-3 text-white uppercase rounded-md shadow-[0_4px_0_0_rgba(42,165,112,1)] tracking-wider">
-      Claim your free trial
-    </button>
-
-    <p class="text-textLight text-[10px] px-8 text-center">
-      By clicking the button, you are agreeing to our
-      <span class="text-primaryRed font-semibold">Terms and Services</span>
-    </p>
-    </form>
-  </div>
   </div>
   <footer>
     <div class="text-slate-100 flex flex-col items-center mb-4">

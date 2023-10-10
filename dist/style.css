@@ -542,32 +542,12 @@ video {
   position: relative;
 }
 
-.top-1\/2 {
-  top: 50%;
-}
-
-.right-4 {
-  right: 1rem;
-}
-
-.top-0 {
-  top: 0px;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.right-5 {
-  right: 1.25rem;
-}
-
 .right-6 {
   right: 1.5rem;
+}
+
+.top-1\/2 {
+  top: 50%;
 }
 
 .top-1\/4 {
@@ -592,16 +572,16 @@ video {
   margin-top: 3.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mt-2 {
-  margin-top: 0.5rem;
+.inline-block {
+  display: inline-block;
 }
 
 .flex {
@@ -650,6 +630,10 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -658,20 +642,8 @@ video {
   gap: 1rem;
 }
 
-.gap-3 {
-  gap: 0.75rem;
-}
-
 .self-end {
   align-self: flex-end;
-}
-
-.self-center {
-  align-self: center;
-}
-
-.justify-self-end {
-  justify-self: end;
 }
 
 .rounded-md {
@@ -710,14 +682,6 @@ video {
   background-image: url('../images/bg-intro-mobile.png');
 }
 
-.bg-\[url\(\'\.\.\/images\'\)\] {
-  background-image: url('../images');
-}
-
-.bg-\[url\(\'\.\.\/images\/icon-error\.svg\'\)\] {
-  background-image: url('../images/icon-error.svg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -728,10 +692,6 @@ video {
 
 .bg-center {
   background-position: center;
-}
-
-.bg-right {
-  background-position: right;
 }
 
 .bg-no-repeat {
@@ -770,6 +730,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .font-poppins {
@@ -843,8 +807,30 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-\[0_6px_0_0_rgba\(42\2c 165\2c 112\2c 1\)\] {
+  --tw-shadow: 0 6px 0 0 rgba(42,165,112,1);
+  --tw-shadow-colored: 0 6px 0 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .outline-textDark {
   outline-color: #3e3c49;
+}
+
+.filter {
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .placeholder\:text-sm::-moz-placeholder {
@@ -865,16 +851,6 @@ video {
   font-weight: 600;
 }
 
-.placeholder\:text-textDark::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(62 60 73 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-textDark::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(62 60 73 / var(--tw-text-opacity));
-}
-
 .placeholder\:text-textLight::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(185 182 211 / var(--tw-text-opacity));
@@ -883,6 +859,11 @@ video {
 .placeholder\:text-textLight::placeholder {
   --tw-text-opacity: 1;
   color: rgb(185 182 211 / var(--tw-text-opacity));
+}
+
+.hover\:bg-\[\#60d6a3\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 214 163 / var(--tw-bg-opacity));
 }
 
 .hover\:underline:hover {
@@ -895,6 +876,33 @@ video {
 
 .focus\:outline-2:focus {
   outline-width: 2px;
+}
+
+.active\:translate-y-1:active {
+  --tw-translate-y: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.active\:shadow-\[0_4px_0_0_rgba\(42\2c 165\2c 112\2c 1\)\]:active {
+  --tw-shadow: 0 4px 0 0 rgba(42,165,112,1);
+  --tw-shadow-colored: 0 4px 0 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.peer:not(:-moz-placeholder-shown):not(:focus):invalid ~ .peer-\[\&\:not\(\:-moz-placeholder-shown\)\:not\(\:focus\)\:invalid\]\:absolute {
+  position: absolute;
+}
+
+.peer:not(:placeholder-shown):not(:focus):invalid ~ .peer-\[\&\:not\(\:placeholder-shown\)\:not\(\:focus\)\:invalid\]\:absolute {
+  position: absolute;
+}
+
+.peer:not(:-moz-placeholder-shown):not(:focus):invalid ~ .peer-\[\&\:not\(\:-moz-placeholder-shown\)\:not\(\:focus\)\:invalid\]\:flex {
+  display: flex;
+}
+
+.peer:not(:placeholder-shown):not(:focus):invalid ~ .peer-\[\&\:not\(\:placeholder-shown\)\:not\(\:focus\)\:invalid\]\:flex {
+  display: flex;
 }
 
 @media (min-width: 640px) {
@@ -922,10 +930,6 @@ video {
     height: 100vh;
   }
 
-  .lg\:max-w-none {
-    max-width: none;
-  }
-
   .lg\:max-w-\[1200px\] {
     max-width: 1200px;
   }
@@ -948,14 +952,6 @@ video {
 
   .lg\:gap-14 {
     gap: 3.5rem;
-  }
-
-  .lg\:gap-6 {
-    gap: 1.5rem;
-  }
-
-  .lg\:gap-4 {
-    gap: 1rem;
   }
 
   .lg\:gap-5 {
@@ -982,4 +978,37 @@ video {
     font-size: 3rem;
     line-height: 1;
   }
+}
+
+.invalid\:\[\&\:not\(\:focus\)\]\:border-primaryRed:not(:focus):invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 122 122 / var(--tw-border-opacity));
+}
+
+.invalid\:\[\&\:not\(\:-moz-placeholder-shown\)\:not\(\:focus\)\]\:border-primaryRed:not(:-moz-placeholder-shown):not(:focus):invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 122 122 / var(--tw-border-opacity));
+}
+
+.invalid\:\[\&\:not\(\:placeholder-shown\)\:not\(\:focus\)\]\:border-primaryRed:not(:placeholder-shown):not(:focus):invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 122 122 / var(--tw-border-opacity));
+}
+
+.invalid\:\[\&\:not\(\:-moz-placeholder-shown\)\:not\(\:focus\)\]\:outline-primaryRed:not(:-moz-placeholder-shown):not(:focus):invalid {
+  outline-color: #ff7a7a;
+}
+
+.invalid\:\[\&\:not\(\:placeholder-shown\)\:not\(\:focus\)\]\:outline-primaryRed:not(:placeholder-shown):not(:focus):invalid {
+  outline-color: #ff7a7a;
+}
+
+.invalid\:\[\&\:not\(\:-moz-placeholder-shown\)\]\:border-primaryRed:not(:-moz-placeholder-shown):invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 122 122 / var(--tw-border-opacity));
+}
+
+.invalid\:\[\&\:not\(\:placeholder-shown\)\]\:border-primaryRed:not(:placeholder-shown):invalid {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 122 122 / var(--tw-border-opacity));
 }
