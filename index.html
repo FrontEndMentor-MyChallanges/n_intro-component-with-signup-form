@@ -1,122 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="./dist/style.css" />
-    <script src="./script.js" defer></script>
-  </head>
+  <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <body
-    class="font-poppins w-full lg:h-screen min-h-screen bg-[url('../images/bg-intro-mobile.png')] bg-no-repeat bg-cover bg-center bg-fixed bg-primaryRed lg:justify-stretch sm:bg-[url('../images/bg-intro-desktop.png')] flex flex-col items-center justify-center"
-  >
-    <div
-      class="wrapper my-14 h-full flex flex-col items-center mx-6 min-w-[280px] max-w-[400px] lg:flex-row lg:mx-[120px] lg:my-0 lg:justify-center lg:gap-14 lg:max-w-[1200px]"
-    >
-      <div class="text-center header lg:flex-1 lg:text-left">
-        <h1 class="text-3xl font-semibold text-white lg:text-4xl xl:text-5xl">Learn to code by watching others</h1>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./dist/style.css" />
+  <script src="./script.js" defer></script>
+</head>
 
-        <p class="mt-6 text-slate-100">
-          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
-          understanding how developers think is invaluable.
-        </p>
-      </div>
-      <div class="lg:flex-1">
-        <button
-          class="bg-accentBlue rounded-xl w-full px-12 py-5 text-white font-semibold shadow-[0_7px_0_0_rgba(0,0,0,0.20)] mt-14 lg:mt-0"
-        >
-          Try it free 7 days <span class="font-normal text-textLight">then $20/mo. thereafter</span>
-        </button>
-        <form
-          action="#"
-          id="form"
-          class="rounded-xl flex flex-col gap-4 lg:gap-5 px-5 py-5 lg:py-8 mt-6 bg-white shadow-[0_7px_0_0_rgba(0,0,0,0.20)] form"
-        >
-          <div class="relative flex flex-col items-center justify-center">
-            <input
-              type="text"
-              placeholder="First Name"
-              class="w-full px-4 py-3 font-semibold border rounded-md firstName placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2"
-            />
-            <img src="./images/icon-error.svg" alt="" class="absolute hidden top-1/4 -translate-y-1/4 right-6" />
-            <p class="self-end hidden mt-2 text-xs text-primaryRed">Please provide a valid email address</p>
-          </div>
+<body
+  class="font-poppins w-full lg:h-screen min-h-screen bg-[url('../images/bg-intro-mobile.png')] bg-no-repeat bg-cover bg-center bg-fixed bg-primaryRed lg:justify-stretch sm:bg-[url('../images/bg-intro-desktop.png')] flex flex-col items-center justify-center">
+  <div
+    class="wrapper my-14 h-full flex flex-col items-center mx-6 min-w-[280px] max-w-[400px] lg:flex-row lg:mx-[120px] lg:my-0 lg:justify-center lg:gap-14 lg:max-w-[1200px]">
+    <div class="header lg:flex-1 lg:text-left text-center">
+      <h1 class="lg:text-4xl xl:text-5xl text-3xl font-semibold text-white">Learn to code by watching others</h1>
 
-          <div class="relative flex flex-col items-center justify-center">
-            <input
-              type="text"
-              placeholder="Last Name"
-              class="w-full px-4 py-3 font-semibold border rounded-md lastName text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2"
-            />
-            <img src="./images/icon-error.svg" alt="" class="absolute hidden top-1/4 -translate-y-1/4 right-6" />
-            <p class="self-end hidden mt-2 text-xs text-primaryRed">Please provide a valid email address</p>
-          </div>
-
-          <div class="relative flex flex-col items-center justify-center">
-            <input
-              type="text"
-              placeholder="Email Address"
-              class="w-full px-4 py-3 font-semibold border rounded-md email text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2"
-            />
-            <img src="./images/icon-error.svg" alt="" class="absolute hidden top-1/4 -translate-y-1/4 right-6" />
-            <p class="self-end hidden mt-2 text-xs text-primaryRed">Please provide a valid email address</p>
-          </div>
-
-          <div class="relative flex flex-col items-center justify-center">
-            <input
-              type="password"
-              placeholder="Password"
-              class="w-full px-4 py-3 font-semibold border rounded-md password placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2"
-            />
-            <img src="./images/icon-error.svg" alt="" class="absolute hidden top-1/4 -translate-y-1/4 right-6" />
-            <p class="self-end hidden mt-2 text-xs text-primaryRed">Please provide a valid email address</p>
-          </div>
-
-          <button
-            class="btnClaim bg-primaryGreen w-full px-4 py-3 text-white uppercase rounded-md shadow-[0_4px_0_0_rgba(42,165,112,1)] tracking-wider"
-          >
-            Claim your free trial
-          </button>
-
-          <p class="text-textLight text-[10px] px-8 text-center">
-            By clicking the button, you are agreeing to our
-            <span class="font-semibold text-primaryRed">Terms and Services</span>
-          </p>
-        </form>
-      </div>
+      <p class="text-slate-100 mt-6">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+        understanding how developers think is invaluable.
+      </p>
     </div>
-    <footer>
-      <div class="flex flex-col items-center mb-4 text-slate-100">
-        <p class="attribution">
-          Challenge by
-          <a
-            href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
-            target="_blank"
-            class="text-textDark hover:underline hover:underline-offset-2"
-          >
-            Frontend Mentor</a
-          >
-        </p>
-        <p>
-          Coded by
-          <a
-            href="https://www.frontendmentor.io/profile/miroslaw-mroczkowski"
-            target="_blank"
-            class="text-textDark hover:underline hover:underline-offset-2"
-          >
-            Mirosław Mroczkowski</a
-          >
-        </p>
-      </div>
-    </footer>
-  </body>
+    <div class="lg:flex-1">
+      <button
+        class="bg-accentBlue rounded-xl w-full px-12 py-5 text-white font-semibold shadow-[0_7px_0_0_rgba(0,0,0,0.20)] mt-14 lg:mt-0">
+        Try it free 7 days <span class="text-textLight font-normal">then $20/mo. thereafter</span>
+      </button>
+      <form action="#" id="form"
+        class="rounded-xl flex flex-col gap-4 lg:gap-5 px-5 py-5 lg:py-8 mt-6 bg-white shadow-[0_7px_0_0_rgba(0,0,0,0.20)] form">
+        <<<<<<< Updated upstream <div class="relative flex flex-col items-center justify-center">
+          <input type="text" placeholder="First Name"
+            class="firstName placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+          <img src="./images/icon-error.svg" alt="" class="top-1/4 -translate-y-1/4 right-6 absolute hidden" />
+          <p class="text-primaryRed self-end hidden mt-2 text-xs">Please provide a valid email address</p>
+    </div>
+
+    <div class="relative flex flex-col items-center justify-center">
+      <input type="text" placeholder="Last Name"
+        class="lastName text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+      <img src="./images/icon-error.svg" alt="" class="top-1/4 -translate-y-1/4 right-6 absolute hidden" />
+      <p class="text-primaryRed self-end hidden mt-2 text-xs">Please provide a valid email address</p>
+    </div>
+
+    <div class="relative flex flex-col items-center justify-center">
+      <input type="text" placeholder="Email Address"
+        class="email text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+      <img src="./images/icon-error.svg" alt="" class="top-1/4 -translate-y-1/4 right-6 absolute hidden" />
+      <p class="text-primaryRed self-end hidden mt-2 text-xs">Please provide a valid email address</p>
+    </div>
+
+    <div class="relative flex flex-col items-center justify-center">
+      <input type="password" placeholder="Password"
+        class="password placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+      <img src="./images/icon-error.svg" alt="" class="top-1/4 -translate-y-1/4 right-6 absolute hidden" />
+      <p class="text-primaryRed self-end hidden mt-2 text-xs">Please provide a valid email address</p>
+    </div>
+
+    =======
+    <input type="text" placeholder="First Name"
+      class="firstName placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+
+    <input type="text" placeholder="Last Name"
+      class="lastName text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+
+    <input type="text" placeholder="Email Address"
+      class="email text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+
+    <input type="password" placeholder="Password"
+      class="password placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+    >>>>>>> Stashed changes
+    <button
+      class="btnClaim bg-primaryGreen w-full px-4 py-3 text-white uppercase rounded-md shadow-[0_4px_0_0_rgba(42,165,112,1)] tracking-wider">
+      Claim your free trial
+    </button>
+
+    <p class="text-textLight text-[10px] px-8 text-center">
+      By clicking the button, you are agreeing to our
+      <span class="text-primaryRed font-semibold">Terms and Services</span>
+    </p>
+    </form>
+  </div>
+  </div>
+  <footer>
+    <div class="text-slate-100 flex flex-col items-center mb-4">
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io/challenges/intro-component-with-signup-form-5cf91bd49edda32581d28fd1"
+          target="_blank" class="text-textDark hover:underline hover:underline-offset-2">
+          Frontend Mentor</a>
+      </p>
+      <p>
+        Coded by
+        <a href="https://www.frontendmentor.io/profile/miroslaw-mroczkowski" target="_blank"
+          class="text-textDark hover:underline hover:underline-offset-2">
+          Mirosław Mroczkowski</a>
+      </p>
+    </div>
+  </footer>
+</body>
+
 </html>
