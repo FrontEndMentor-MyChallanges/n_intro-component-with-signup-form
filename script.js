@@ -113,6 +113,8 @@ const showSuccess = input => {
 
 //////////////////////
 
+let validFirstName, validLastName, validEmail, validPassword;
+
 // Input field validating functions
 const checkFirstName = () => {
 	//Init values
@@ -130,10 +132,10 @@ const checkFirstName = () => {
 		showError(firstNameEl, `First name must be between ${min} and ${max} letters`);
 	} else {
 		showSuccess(firstNameEl);
-		valid = true;
+		validFirstName = true;
 	}
 
-	return valid;
+	return validFirstName;
 };
 
 const checkLastName = () => {
@@ -152,10 +154,10 @@ const checkLastName = () => {
 		showError(lastNameEl, `Last name must be between ${min} and ${max} letters`);
 	} else {
 		showSuccess(lastNameEl);
-		valid = true;
+		validLastName = true;
 	}
 
-	return valid;
+	return validLastName;
 };
 
 const checkEmail = () => {
@@ -172,10 +174,10 @@ const checkEmail = () => {
 		showError(emailEl, 'Looks like this is not an email');
 	} else {
 		showSuccess(emailEl);
-		valid = true;
+		validEmail = true;
 	}
 
-	return valid;
+	return validEmail;
 };
 
 const checkPassword = () => {
@@ -192,10 +194,10 @@ const checkPassword = () => {
 		showError(passwordEl, '8 chars, 1 lower, 1 upper, 1 number, 1 special char');
 	} else {
 		showSuccess(passwordEl);
-		valid = true;
+		validPassword = true;
 	}
 
-	return valid;
+	return validPassword;
 };
 
 const validateForm = () => {
@@ -205,6 +207,7 @@ const validateForm = () => {
 		isPasswordSecure = checkPassword();
 
 	let isFormValid = isFirstNameValid && isLastNameValid && isEmailValid && isPasswordSecure;
+
 	return isFormValid;
 };
 
@@ -237,8 +240,8 @@ form.addEventListener('input', function (e) {
 			checkPassword();
 			break;
 	}
-	let isFormValid = validateForm();
-	if (isFormValid) {
+
+	if (validFirstName && validLastName && validEmail && validPassword) {
 		btn.classList.remove('bg-gray-200', 'cursor-auto');
 		btn.classList.add(
 			'cursor-pointer',
