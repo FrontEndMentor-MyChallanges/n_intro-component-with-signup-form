@@ -34,12 +34,13 @@ Users should be able to:
 ![](./images/mobile.png)
 ![](./images/validation-mobile.png)
 ![](./images/validation-err.png)
+![](./images/validation-err2.png)
 ![](./images/validation-success.png)
 
 ### Links
 
 - Solution URL: [Code](https://github.com/FrontEndMentor-MyChallanges/n_intro-component-with-signup-form)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live](https://frontendmentor-mychallanges.github.io/n_intro-component-with-signup-form/)
 
 ## My process
 
