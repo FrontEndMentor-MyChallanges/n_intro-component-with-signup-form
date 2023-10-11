@@ -36,50 +36,47 @@
       </button>
       <form action="#" id="form" novalidate
         class="rounded-xl flex flex-col gap-4 lg:gap-5 px-5 py-5 lg:py-8 mt-6 bg-white shadow-[0_7px_0_0_rgba(0,0,0,0.20)] form">
-        <div class="input-container">
-          <div class=" relative">
-            <input type="text" placeholder="First Name" id="firstName" name="firstName" required
+        <div class="msg-container">
+          <div class="input-container relative">
+            <input type="text" placeholder="First Name" id="firstName" name="firstName"
               class="firstName placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-            <img src="./images/icon-error.svg" alt=""
-              class="firstNameErr top-1/2 right-6 absolute hidden -translate-y-1/2" />
+            <img src="" alt="" class="errImg top-1/2 right-6 absolute hidden -translate-y-1/2" />
 
           </div>
-          <p class="errMsg text-primaryRed justify-end hidden mt-2 text-xs">Please provide a valid email
-            address
-          </p>
+          <p class="errMsg text-primaryRed justify-end hidden mt-2 text-xs"></p>
         </div>
 
-        <!-- <div>
-          <div class="relative flex flex-col items-center justify-center">
-            <input type="text" placeholder="Last Name" id="lastName" name="lastName" required
-              class="lastName text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-            <img src="./images/icon-error.svg" alt="" class="top-1/2 right-6 hiddn absolute -translate-y-1/2" />
+        <div class="msg-container">
+          <div class="input-container relative">
+            <input type="text" placeholder="Last Name" id="lastName" name="lastName"
+              class="lastName placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+            <img src="" alt="" class="errImg top-1/2 right-6 absolute hidden -translate-y-1/2" />
 
           </div>
-          <p class="text-primaryRed flex justify-end w-full mt-2 text-xs">Please provide a valid email address</p>
+          <p class="errMsg text-primaryRed justify-end hidden mt-2 text-xs"></p>
         </div>
 
-        <div>
-          <div class="relative flex flex-col items-center justify-center">
-            <input type="email" placeholder="Email Address" id="email" name="email" required
-              class="email text-textDark placeholder:text-sm placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-            <img src="./images/icon-error.svg" alt="" class="top-1/2 right-6 absolute -translate-y-1/2" />
+        <div class="msg-container">
+          <div class="input-container relative">
+            <input type="email" placeholder="Email Address" id="email" name="email"
+              class="email placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
+            <img src="" alt="" class="errImg top-1/2 right-6 absolute hidden -translate-y-1/2" />
           </div>
-          <p class="text-primaryRed flex justify-end w-full mt-2 text-xs">Please provide a valid email address</p>
+          <p class="errMsg text-primaryRed justify-end hidden mt-2 text-xs"></p>
         </div>
 
-        <div>
-          <div class="relative flex flex-col items-center justify-center">
-            <input type="password" placeholder="Password" id="password" name="password" required
+        <div class="msg-container">
+          <div class="input-container relative">
+            <input type="password" placeholder="Password" id="password" name="password"
               class="password placeholder:text-sm text-textDark placeholder:text-textLight placeholder:font-semibold outline-textDark focus:outline-2 w-full px-4 py-3 font-semibold border rounded-md" />
-            <img src="./images/icon-error.svg" alt="" class="top-1/2 right-6 absolute -translate-y-1/2" />
+            <img src="" alt="" class="errImg top-1/2 right-6 absolute hidden -translate-y-1/2" />
 
           </div>
-          <p class="text-primaryRed flex justify-end w-full mt-2 text-xs">Please provide a valid email address</p>
-        </div> -->
+          <p class="errMsg text-primaryRed justify-end hidden mt-2 text-xs"></p>
+        </div>
 
-        <button type="submit"
-          class="btnClaim bg-primaryGreen w-full px-4 py-3 text-white uppercase rounded-md shadow-[0_6px_0_0_rgba(42,165,112,1)] tracking-wider hover:bg-[#60d6a3] transition-all active:translate-y-1 active:shadow-[0_4px_0_0_rgba(42,165,112,1)]">
+        <button disabled type="submit"
+          class="btnClaim w-full px-4 py-3 tracking-wider text-white uppercase bg-gray-200 rounded-md">
           Claim your free trial
         </button>
 
